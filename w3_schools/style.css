@@ -381,6 +381,15 @@ body {
   width: 900px;
   background: white;
   position: relative;
+  animation: modalIn ease 0.5s;
+}
+@keyframes modalIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 .modal .modal-box .header {
   text-align: center;
