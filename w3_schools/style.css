@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+}
+/* start css menu */
+.menu {
+  background-color: black;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.menu .nav ul {
+  list-style-type: none;
+  display: flex;
+  cursor: pointer;
+}
+.menu .nav ul li {
+  padding: 12px 14px;
+  position: relative;
+}
+.menu .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.menu .nav ul li i {
+  color: white;
+}
+.menu .nav ul li:hover {
+  background-color: #ccc;
+  color: black;
+}
+.menu .nav ul li:hover a {
+  color: black;
+}
+.menu .nav ul li:hover i {
+  color: black;
+}
+.menu .nav ul li .nav-child {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 46px;
+  box-shadow: 0px 10px 15px #8888;
+}
+.menu .nav ul li:hover .nav-child {
+  display: block;
+}
+.menu .nav ul li .nav-child li {
+  background-color: white;
+  padding: 12px 14px;
+}
+.menu .nav ul li .nav-child li a {
+  color: black;
+}
+.menu .nav ul li .nav-child li:hover {
+  background-color: #ccc;
+}
+.menu .search .icon {
+  color: white;
+  padding: 12px 20px;
+}
+.menu .search .icon:hover {
+  color: white;
+  background-color: orangered;
+}
+/* end css menu */
+
+/* start css slide */
+.slide {
+  padding-top: 45px;
+}
+.slide .slide-box {
+  position: relative;
+}
+.slide .slide-box .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.slide .slide-box .infor {
+  padding: 48px 12px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.slide .slide-box .infor .city,
+.discrip {
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+/* end css slide */
+
+/* statr the band */
+.the-band {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.the-band .container {
+  max-width: 800px;
+}
+.the-band .container h2,
+.text {
+  text-align: center;
+  margin: 10px 0;
+}
+.the-band .container h2 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.the-band .container .text {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+}
+.the-band .container .box-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 32px 0;
+}
+.the-band .container .box-item .item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.the-band .container .box-item .item img {
+  text-align: center;
+  width: 60%;
+  border-radius: 5px;
+}
+/* end the band */
+
+/* start tour date */
+.tour-date {
+  background-color: black;
+  padding: 40px 0;
+}
+.tour-date .tour-box {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.tour-date .tour-box .top {
+  text-align: center;
+}
+.tour-date .tour-box .top h2 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: white;
+}
+.tour-date .tour-box .top p {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+  padding: 20px 0;
+}
+.tour-date .tour-box .mid ul {
+  list-style-type: none;
+}
+.tour-date .tour-box .mid ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding: 5px 10px !important;
+  background: white;
+}
+.tour-date .tour-box .mid ul li p {
+  color: gray;
+}
+.tour-date .tour-box .mid ul li span {
+  background-color: orangered;
+  color: white;
+  padding: 8px 16px;
+}
+.tour-date .tour-box .mid ul li:last-child {
+  justify-content: space-between;
+}
+.tour-date .tour-box .mid ul li:last-child span {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 9px;
+}
+.tour-date .tour-box .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.tour-date .tour-box .bottom .item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tour-date .tour-box .bottom .item .city {
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.tour-date .tour-box .bottom .item .time {
+  margin-left: 10px;
+  color: rgb(172, 172, 172);
+}
+.tour-date .tour-box .bottom .item .description {
+  margin-left: 10px;
+}
+.tour-date .tour-box .bottom .item .button button {
+  border: none;
+  padding: 10px 16px;
+  background-color: black;
+  color: white;
+  margin: 0 0 20px 10px;
+}
+.tour-date .tour-box .bottom .item .button button:hover {
+  background-color: gray;
+  color: black;
+  cursor: pointer;
+}
+.tour-date .tour-box .bottom .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* end tour date */
+
+/* start contact */
+.contact {
+  margin-top: 50px;
+}
+.contact .contact-box {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-box .top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.contact .contact-box .top h2 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+.contact .contact-box .top p {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+}
+.contact .contact-box .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contact .contact-box .bottom .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .contact-box .bottom .left .location,
+.phone,
+.email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 16px;
+}
+.contact .contact-box .bottom .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .contact-box .bottom .right form .info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.contact .contact-box .bottom .right form .info input {
+  padding: 8px;
+}
+.contact .contact-box .bottom .right form .mess input {
+  padding: 8px;
+  width: 100%;
+}
+.contact .contact-box .bottom .right form button {
+  float: right;
+  padding: 10px 15px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.contact .contact-box .bottom .right form button {
+  float: right;
+  padding: 10px 15px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.contact .contact-box .bottom .right form button:hover {
+  background-color: gray;
+  color: black;
+  cursor: pointer;
+}
+/* end contact */
+
+/* start map */
+.map {
+  padding: 50px 0;
+}
+.map img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* end map */
+
+/* start icon */
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+  color: gray;
+}
+.icon .info i {
+  font-size: 28px;
+}
+.icon .text a {
+  color: gray;
+}
+/* end icon */
+
+/* start modal */
+.modal {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  /* strat close  modal*/
+  display: none;
+  /* end close modal */
+  justify-content: center;
+  align-items: center;
+}
+/* start open modal */
+.modal.open {
+  display: flex;
+}
+/* end open modal */
+.modal .modal-box {
+  width: 900px;
+  background: white;
+  position: relative;
+}
+.modal .modal-box .header {
+  text-align: center;
+  background: #009688;
+  padding: 32px 0;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.modal .modal-box #close-icon {
+  position: absolute;
+  right: 0;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.modal .modal-box #close-icon:hover {
+  background: gray;
+  color: black;
+}
+.modal .modal-box .mid {
+  padding: 20px 10px;
+}
+.modal .modal-box .mid form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal .modal-box .mid form input {
+  outline: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.modal .modal-box .mid form .pay {
+  border: none;
+  padding: 15px 0;
+  background: #009688;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.modal .modal-box .mid form .pay:hover {
+  background: #ccc;
+  color: black;
+}
+.modal .modal-box .footer {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modal-box .footer button.close {
+  border: none;
+  background: #f44336;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+.modal .modal-box .footer a {
+  color: blue;
+}
+/* end modal */
