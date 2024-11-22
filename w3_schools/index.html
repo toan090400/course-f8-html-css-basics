@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>W3.CSS Template</title>
 
     <!-- câu lệnh thay đổi icon mặc định -->
-    <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
+    <link
+      rel="shortcut icon"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsitive.css" />
     <!-- link icon -->
     <link
       rel="stylesheet"
@@ -21,16 +26,16 @@
       <!-- menu start -->
       <div class="menu">
         <div class="nav">
-          <ul>
+          <ul id="js-responsitive-nav">
             <li>
               <a href="#">HOME</a>
             </li>
-            <li><a href="#">BAND</a></li>
-            <li><a href="#">TOUR</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
             <!-- <li>MORE</li> -->
             <li>
-              <a href="">MORE</a>
+              <a href="#">MORE</a>
               <i class="fa fa-caret-down"></i>
               <ul class="nav-child">
                 <li><a href="#">Merchandise</a></li>
@@ -43,6 +48,7 @@
         <div class="search">
           <div class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="js-respon-nav-icon" class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
@@ -63,7 +69,7 @@
       <!-- end slide -->
 
       <!-- start the band -->
-      <div class="the-band">
+      <div id="band" class="the-band">
         <div class="container">
           <h2>THE BAND</h2>
           <p class="text">We love music</p>
@@ -111,7 +117,7 @@
       <!-- end the band -->
 
       <!-- start tour date -->
-      <div class="tour-date">
+      <div id="tour" class="tour-date">
         <div class="tour-box">
           <div class="top">
             <h2>TOUR DATES</h2>
@@ -185,7 +191,7 @@
       <!-- start tour date -->
 
       <!-- start contact -->
-      <div class="contact">
+      <div id="contact" class="contact">
         <div class="contact-box">
           <div class="top">
             <h2>CONTACT</h2>

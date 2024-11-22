@@ -32,3 +32,12 @@ modalCloss2.addEventListener("click", closeModal);
 
 // thực hiện sự kiện click vùng ngoài đóng modal
 modal.addEventListener("click", closeModal);
+
+// js respositive cho nav
+const resNav = document.querySelector("#js-responsitive-nav");
+
+const openResponNav = document.querySelector("#js-respon-nav-icon");
+
+openResponNav.addEventListener("click", () => {
+  resNav.classList.toggle("open");
+});

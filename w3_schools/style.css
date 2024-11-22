@@ -7,6 +7,9 @@ body {
   font-size: 15px;
   font-family: "Lato", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* start css menu */
 .menu {
   background-color: black;
@@ -73,6 +76,9 @@ body {
   color: white;
   background-color: orangered;
 }
+.menu .search .icon i:last-child {
+  display: none;
+}
 /* end css menu */
 
 /* start css slide */
@@ -99,6 +105,7 @@ body {
   padding: 5px 0;
   text-align: center;
   color: white;
+  text-shadow: 0 0 1px black;
 }
 /* end css slide */
 
@@ -453,4 +460,6 @@ body {
 .modal .modal-box .footer a {
   color: blue;
 }
+
 /* end modal */
+/* ======================================================== */
