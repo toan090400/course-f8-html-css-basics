@@ -1,0 +1,75 @@
+:root {
+  --background-color: #ee4d2d;
+  --text-color: #ffffff;
+  --discount-background-color: #ffe97a;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, æ–‡æ³‰é©›æ­£é»‘,
+    WenQuanYi Zen Hei, Hiragino Sans GB, å„·é»‘ Pro, LiHei Pro, Heiti TC,
+    å¾®è»Ÿæ­£é»‘é«”, Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;
+  line-height: 1.2;
+}
+ul {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+.btn {
+  border: none;
+  outline: none;
+}
+.input {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+}
+.modal__overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.modal--body {
+  background-color: var(--text-color);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  animation: openModal ease 0.3s;
+}
+@keyframes openModal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
