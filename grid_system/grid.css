@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: antiquewhite;
+}
+.grid {
+  width: 90%;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+.col {
+  background-color: aquamarine;
+  color: black;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, calc(20% - 8px));
+  gap: 10px;
+}
